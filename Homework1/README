@@ -1,0 +1,10 @@
+The only working part of this project is the random walk and even that
+causes seg faults. I am very busy with graduation stuff so I did not have
+time to debug everything. The DFS and BFS implementation is in main.cpp but
+I do not have it executed as I know it does not work. However, I do think
+that the implementation is close, there are just some bugs I don't have time
+to find.
+
+To build/run the project, just use "$ make build" and "$ make run"
+respectively. For now, runnning just loads in SBP-level0.txt and does a
+single random walk.
