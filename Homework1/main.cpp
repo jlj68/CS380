@@ -1,6 +1,6 @@
-#include "slidingBrickGame.h"
 #include <string>
 #include <vector>
+#include "slidingBrickGame.h"
 
 using namespace std;
 

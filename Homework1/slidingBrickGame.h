@@ -6,6 +6,11 @@
 
 using namespace std;
 
+struct pMove {
+	int piece;
+	int direction;
+};
+
 class SlidingBrickGame {
 	public:
 		SlidingBrickGame(vector<vector<int> > state);
@@ -15,7 +20,14 @@ class SlidingBrickGame {
 		void setState(vector<vector<int> > state);
 		void printState(void);
 		bool isComplete(void);
-		bool possibleMoves(int piece);
+		vector<int> getAllPieces(void);
+		vector<pMove> possibleMoves(int piece);
+		vector<pMove> possibleMoves(void);
+		void applyMove(pMove m);
+		vector<vector<int> > applyMoveCloning(pMove m);
+		static bool compareStates(vector<vector<int> > a, vector<vector<int> > b);
+		vector<vector<int> > getNormalizedState(void);
+		vector<vector<int> > getNormalizedState(vector<vector<int> > state);
 	private:
 		vector<vector<int> > _board;
 };
