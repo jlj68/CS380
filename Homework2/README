@@ -1,7 +1,10 @@
 To build/run the project, just use "$ make build" and "$ make run1", "$ make
 run2", or "$ make run3" in order to run parts 1/2/3 of in the main function.
 You can also just build the project once then use "$ ./hw2 N", where 'N' is
-the part you would like to run.  
+the part you would like to run.
+
+Also, please note that this project takes a *VERY* long time to execute - I
+will need to do some sort of optimization in the future to speed it up.
 
 ---------------------------------
 PROOF OF HEURISTIC ADMISSABILITY:
