@@ -1,0 +1,16 @@
+To build/run the project, just use "$ make build" and "$ make run1", "$ make
+run2", or "$ make run3" in order to run parts 1/2/3 of in the main function.
+You can also just build the project once then use "$ ./hw2 N", where 'N' is
+the part you would like to run.  
+
+---------------------------------
+PROOF OF HEURISTIC ADMISSABILITY:
+
+The heuristic I used adds the Manhattan distance with the number of bricks
+in the way of the goal brick to the destination.
+
+This is clearly admissible because the goal brick will need to move at least
+as many times as the value of the Manhattan distance (i.e. if M.D. = 5 then
+the goal brick will need to move at least 5 times) and all of the bricks in
+the way of the goal brick will also need to move in order for the goal brick
+to reach to destination.
